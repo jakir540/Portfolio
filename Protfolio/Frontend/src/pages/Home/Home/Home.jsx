@@ -8,6 +8,18 @@ import spaceImage from "../../../assets/space.jpg";
 import { Typography } from "@mui/material";
 import TimeLine from "../TimeLine/TimeLine";
 
+import {
+  SiChai,
+  SiReact,
+  SiJavascript,
+  SiMongodb,
+  SiNodedotjs,
+  SiExpress,
+  SiCss3,
+  SiHtml5,
+  SiThreedotjs,
+} from "react-icons/si";
+
 const Home = () => {
   useEffect(() => {
     const textureLoader = new THREE.TextureLoader();
@@ -97,7 +109,65 @@ const Home = () => {
         <Typography variant="h3">TimeLine</Typography>
         <TimeLine timelines={[1, 2, 3, 4]}></TimeLine>
       </div>
-      <div className="homeSkills">Skills</div>
+
+      {/* all skills show here */}
+      <div className="homeSkills">
+        <Typography variant="h3">Skills</Typography>
+
+        <div className="homeCubeSkills">
+          <div className="homeCubeSkillFaces homeCubeSkillsFace1">
+            <img
+              src="https://w7.pngwing.com/pngs/956/695/png-transparent-mongodb-original-wordmark-logo-icon-thumbnail.png"
+              alt="Face1"
+            />
+          </div>
+
+          <div className="homeCubeSkillFaces homeCubeSkillsFace2">
+            <img
+              src="https://logos-world.net/wp-content/uploads/2023/02/JavaScript-Symbol.png"
+              alt="Face1"
+            />
+          </div>
+
+          <div className="homeCubeSkillFaces homeCubeSkillsFace3">
+            <img
+              src="https://w7.pngwing.com/pngs/324/26/png-transparent-c-letter-alphabet-letter-c-angle-a-letter-case.png"
+              alt="Face1"
+            />
+          </div>
+
+          <div className="homeCubeSkillFaces homeCubeSkillsFace4">
+            <img
+              src="https://1.bp.blogspot.com/-jkSmywQ57sA/Wer3KKSqgaI/AAAAAAAACc4/07TexMsBBI4v7WlVKo76YvxM3TvrMxIdwCLcBGAs/s640/express.js.png"
+              alt="Face1"
+            />
+          </div>
+
+          <div className="homeCubeSkillFaces homeCubeSkillsFace5">
+            <img src="https://reactnative.dev/img/logo-og.png" alt="Face1" />
+          </div>
+
+          <div className="homeCubeSkillFaces homeCubeSkillsFace6">
+            <img
+              src="https://hopetutors.com/wp-content/uploads/2017/03/nodejs-logo-1.png"
+              alt="Face1"
+            />
+          </div>
+        </div>
+        {/* cube under shadow create */}
+        <div className="cubeShadow"></div>
+        <div className="homeSKillsBox">
+          <SiChai />
+          <SiCss3 />
+          <SiExpress />
+          <SiHtml5 />
+          <SiJavascript />
+          <SiMongodb />
+          <SiNodedotjs />
+          <SiReact />
+          <SiThreedotjs />
+        </div>
+      </div>
     </div>
   );
 };
