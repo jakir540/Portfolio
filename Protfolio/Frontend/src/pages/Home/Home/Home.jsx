@@ -1,10 +1,12 @@
 import { useEffect } from "react";
 import "./Home.css";
 import * as THREE from "three";
-import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+// import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import moonImage from "../../../assets/moon.jpg";
 import venusImage from "../../../assets/venus.jpg";
 import spaceImage from "../../../assets/space.jpg";
+import { Typography } from "@mui/material";
+import TimeLine from "../TimeLine/TimeLine";
 
 const Home = () => {
   useEffect(() => {
@@ -32,16 +34,16 @@ const Home = () => {
     const venusGeometry = new THREE.SphereGeometry(3, 64, 64);
     const venusMaterial = new THREE.MeshBasicMaterial({ map: venusTexture });
     const venus = new THREE.Mesh(venusGeometry, venusMaterial);
-    venus.position.set(6, 5, 5);
+    venus.position.set(8, 5, 5);
 
     const pointLight = new THREE.PointLight(0xffffff, 1);
-    pointLight.position.set(8,5,5);
+    pointLight.position.set(8, 5, 5);
 
     const pointLight2 = new THREE.PointLight(0xffffff, 0.1);
-    pointLight.position.set(-8,-5,-5);
+    pointLight2.position.set(-8, -5, -5);
 
     const lightHelper = new THREE.PointLightHelper(pointLight);
-    const controls = new OrbitControls(camera, renderer.domElement);
+    // const controls = new OrbitControls(camera, renderer.domElement);
     scene.add(moon);
     scene.add(pointLight);
     scene.add(pointLight2);
@@ -49,44 +51,32 @@ const Home = () => {
     scene.add(venus);
     scene.background = spaceTexture;
 
+    // add eventListener
 
-    // add eventListener 
-
-   window.addEventListener("mousemove",(e)=>{
-    const rotationSpeed = 0.01
-    if (e.clientX <= window.innerWidth /2) {
-      moon.rotation.x -= rotationSpeed;
-      moon.rotation.y += rotationSpeed;
-      venus.rotation.x -= rotationSpeed;
-      venus.rotation.y += rotationSpeed;
-
-    }
-   else if (e.clientX > window.innerWidth /2) {
-      moon.rotation.x -= rotationSpeed;
-      moon.rotation.y -= rotationSpeed;
-      venus.rotation.x -= rotationSpeed;
-      venus.rotation.y -= rotationSpeed;
-
-    }
-   else if (e.clientY > window.innerHeight /2) {
-      moon.rotation.x -= rotationSpeed;
-      moon.rotation.y += rotationSpeed;
-      venus.rotation.x -= rotationSpeed;
-      venus.rotation.y += rotationSpeed;
-
-    }
-    else if (e.clientY <= window.innerHeight /2) {
-      moon.rotation.x -= rotationSpeed;
-      moon.rotation.y -= rotationSpeed;
-      venus.rotation.x -= rotationSpeed;
-      venus.rotation.y -= rotationSpeed;
-
-    }
-
-   })
-   
-
-   
+    window.addEventListener("mousemove", (e) => {
+      const rotationSpeed = 0.01;
+      if (e.clientX <= window.innerWidth / 2) {
+        moon.rotation.x -= rotationSpeed;
+        moon.rotation.y += rotationSpeed;
+        venus.rotation.x -= rotationSpeed;
+        venus.rotation.y += rotationSpeed;
+      } else if (e.clientX > window.innerWidth / 2) {
+        moon.rotation.x -= rotationSpeed;
+        moon.rotation.y -= rotationSpeed;
+        venus.rotation.x -= rotationSpeed;
+        venus.rotation.y -= rotationSpeed;
+      } else if (e.clientY > window.innerHeight / 2) {
+        moon.rotation.x -= rotationSpeed;
+        moon.rotation.y += rotationSpeed;
+        venus.rotation.x -= rotationSpeed;
+        venus.rotation.y += rotationSpeed;
+      } else if (e.clientY <= window.innerHeight / 2) {
+        moon.rotation.x -= rotationSpeed;
+        moon.rotation.y -= rotationSpeed;
+        venus.rotation.x -= rotationSpeed;
+        venus.rotation.y -= rotationSpeed;
+      }
+    });
 
     const animate = () => {
       requestAnimationFrame(animate);
@@ -103,6 +93,11 @@ const Home = () => {
   return (
     <div className="home">
       <canvas className="homeCanvas"></canvas>
+      <div className="homeContainer">
+        <Typography variant="h3">TimeLine</Typography>
+        <TimeLine timelines={[1, 2, 3, 4]}></TimeLine>
+      </div>
+      <div className="homeSkills">Skills</div>
     </div>
   );
 };
