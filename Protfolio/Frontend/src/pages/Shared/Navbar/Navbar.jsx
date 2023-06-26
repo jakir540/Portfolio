@@ -21,10 +21,9 @@ const Navbar = () => {
                 link3Text="Projects"
                 link4Text="Contact"
                 link1Url="/"              
-                link2Url="/Home"
-                link3Url="/About"
-                link4Url="/Projects"
-                link5Url="/Contact"
+                link2Url="/about"
+                link3Url="/projects"
+                link4Url="/contact"
                 link1ColorHover= 'white'
                 link1Color="HSL(250,100%,75%"
                 link1Size="1.5rem"

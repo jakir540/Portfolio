@@ -5,6 +5,8 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home/Home/Home.jsx";
 import Main from "../layout/Main.jsx";
+import About from "./pages/About/About.jsx";
+import Projects from "./pages/Projects/Projects.jsx";
 
 const router = createBrowserRouter([
   {
@@ -16,8 +18,20 @@ const router = createBrowserRouter([
         element:<Home></Home>
 
       }
+      
     ]
   },
+  {
+    path:"/about",
+    element:<About></About>
+
+  },
+  {
+    path:"/projects",
+    element:<Projects></Projects>
+
+  }
+  
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

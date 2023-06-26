@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <div className="footer-body">
         <div className="footer-content">
-      <h3>Foolish Developer</h3>
+      <h3>MERN Stack Developer</h3>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
         voluptatibus voluptatum obcaecati, numquam voluptas assumenda debitis
