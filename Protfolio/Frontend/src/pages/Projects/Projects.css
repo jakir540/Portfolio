@@ -1,0 +1,63 @@
+.projects {
+  background-color: hsl(219, 48%, 8%);
+  min-height: 100vh;
+  padding-top: 15vmax;
+}
+.projects > h3 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  background-color: hsl(250, 100%, 75%);
+  padding: 2vmax 4vmax;
+  display: flex;
+  border-radius: 100px;
+  align-items: center;
+  left: 50%;
+  transform: translate(-50%, -100vh);
+    animation: projectHeadingAnimation 1s ease-in-out forwards ;
+}
+.projects > h3 > svg {
+  margin: 1vmax;
+}
+.projectImage {
+  height: 300px;
+}
+.projectsWrappers {
+  border-top: 100px solid white;
+  border-radius: 300px 300px 0 0;
+  min-height: inherit;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5vmax;
+  padding-bottom: 10vmax;
+  overflow-x: hidden;
+}
+
+.projectCard {
+    width: 80%;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.712);
+    margin: 2vmax;
+    border-radius: 10px;
+    display: flex;
+    transform: translateX(-100vw);
+    animation: projectCardAnimation 1s ease-in-out forwards 0.5s;
+  }
+  .projectsWrappers :nth-child(even) {
+    transform: translateX(100vw);
+    animation: projectCardAnimation 1s ease-in-out forwards 1s;
+  }
+  
+  @keyframes projectCardAnimation {
+    to {
+      transform: translateX(0);
+    }
+  }
+  @keyframes projectHeadingAnimation {
+    to{
+        transform: translate(-50%, -50%);
+    }
+  } 
