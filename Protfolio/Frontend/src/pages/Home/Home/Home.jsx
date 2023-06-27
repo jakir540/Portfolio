@@ -19,6 +19,7 @@ import {
   SiHtml5,
   SiThreedotjs,
 } from "react-icons/si";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   useEffect(() => {
@@ -101,10 +102,54 @@ const Home = () => {
     };
 
     animate();
+   return window.addEventListener("scroll",()=>{
+      camera.rotation.z = window.scrollY * 0.001;
+      camera.rotation.y = window.scrollY * 0.003;
+       const skillsBox = document.getElementById("homeSKillsBox");
+       if (window.scrollY > 1500) {
+        skillsBox.style.animationName = "homeSKillsBoxAnimationOn"
+       }
+       else{
+        skillsBox.style.animationName = "homeSKillsBoxAnimationOff"
+       }
+
+    })
+
+
   }, []);
   return (
     <div className="home">
       <canvas className="homeCanvas"></canvas>
+      <div className="homeCanvasContainer">
+      <Typography variant="h1">
+          <p>M</p>
+          <p>D</p>
+          <br />
+          <p>J</p>
+          <p>A</p>
+          <p>K</p>
+          <p>I</p>
+          <p>R</p>
+         <br />
+
+          <p>H</p>
+          <p>O</p>
+          <p>S</p>
+          <p>S</p>
+          <p>A</p>
+          <p>I</p>
+          <p>N</p>
+        </Typography>
+
+        <div className="homeCanvasBox">
+          <Typography variant="h2">I AM A <span style={{color:"hsl(250, 100%, 75%)"}}>MERN</span></Typography>
+          <Typography variant="h2">DEVELOPER</Typography>
+          <Typography variant="h2">PHOTOGRAPHER</Typography>
+          <Typography variant="h2">CONTENT CREATOR</Typography>
+        </div>
+
+        <Link to="/projects">VIEW PROJECTS</Link>
+      </div>
       <div className="homeContainer">
         <Typography variant="h3">TimeLine</Typography>
         <TimeLine timelines={[1, 2, 3, 4]}></TimeLine>
@@ -156,7 +201,7 @@ const Home = () => {
         </div>
         {/* cube under shadow create */}
         <div className="cubeShadow"></div>
-        <div className="homeSKillsBox">
+        <div className="homeSKillsBox" id="homeSKillsBox">
           <SiChai />
           <SiCss3 />
           <SiExpress />

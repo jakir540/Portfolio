@@ -12,7 +12,7 @@ const Login = () => {
     <div className="login">
       <div className="loginContainer">
         <form className="loginForm" onSubmit={submitHandler}> 
-          <Typography>
+          <Typography variant="h4">
             <p>A</p>
             <p>D</p>
             <p>M</p>
