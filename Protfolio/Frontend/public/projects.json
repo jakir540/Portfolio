@@ -1,0 +1,25 @@
+ [
+      {
+        "url": "https://chef-recipe-hunting-82ecd.web.app/",
+        "projectImage": "https://i.ibb.co/YTTjvd5/project1.jpg",
+        "projectTitle": "chef-recipe Website",
+        "description": "A full-stack e-commerce website built using the MERN stack (MongoDB, Express.js, React.js, and Node.js). The website allows users to browse products, add them to the cart, and make purchases securely. It includes features like user authentication, product search, and order management.",
+        "technologies": "MongoDB, Express.js, React.js, Node.js"
+      },
+      {
+        "url": "https://bd-toymart.web.app/",
+        "projectImage": "https://i.ibb.co/0qrj1qd/project2.jpg",
+        "projectTitle": "bd-toymart website",
+        "description": "A task management application developed using the MERN stack. It allows users to create, update, and delete tasks, set deadlines, and mark tasks as complete. The app includes features like user authentication, task filtering, and sorting.",
+        "technologies":"MongoDB, Express.js, React.js, Node.js"
+      },
+      {
+        "url": "https://kriya-kolap.firebaseapp.com/",
+        "projectImage": "https://i.ibb.co/vmd8ND1/project3.jpg",
+        "projectTitle": "kriya-kolap",
+        "description": "A social media platform built using the MERN stack. Users can create profiles, post updates, follow other users, and engage in social interactions. The platform includes features like news feeds, notifications, and user search.",
+        "technologies": "MongoDB, Express.js, React.js, Node.js"
+      }
+    ]
+  
+  

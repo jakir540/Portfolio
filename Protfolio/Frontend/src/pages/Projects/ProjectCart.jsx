@@ -1,35 +1,24 @@
-import { Delete } from "@mui/icons-material";
-import { Button, Typography } from "@mui/material";
-// import   './ProjectCart.css'
+import {  Typography } from "@mui/material";
 import './Projects.css'
 
-const ProjectCart = ({
-  url,
-  projectImage,
-  projectTitle,
-  description,
-  technologies,
-
-}) => {
+const ProjectCart = ({project}) => {
   return (
     <>
-      <a href={url} className="projectCard" target="blank">
+      <a href={project.url} className="projectCard" target="blank">
         <div>
-          <img src={projectImage} alt="" className="projectImage" />
-          <Typography variant="h3">{projectTitle}</Typography>
+          <img src={project.projectImage} alt="" className="projectImage" />
+          <Typography variant="h3">{project.projectTitle}</Typography>
 
           <div>
-            <Typography variant="h4">About Project</Typography>
-            <Typography>{description}</Typography>
-            <Typography variant="h6">Tect Stack: {technologies}</Typography>
+           
+            <Typography>{project.description}</Typography>
+            <Typography variant="h6">Tect Stack: {project.technologies}</Typography>
           </div>
         </div>
       </a>
       
        
-        <Button style={{color: "rgba(40,40,40,0.7)"}}>
-            <Delete></Delete>
-        </Button>
+       
       
     </>
   );
