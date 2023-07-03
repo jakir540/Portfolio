@@ -14,10 +14,7 @@ const Footer = () => {
         <div className="footer-content">
       <h3>MERN Stack Developer</h3>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-        voluptatibus voluptatum obcaecati, numquam voluptas assumenda debitis
-        sint dicta praesentium eaque vero quod aut minima! Ipsum cupiditate
-        dignissimos id optio nisi!
+      Experienced MERN stack developer proficient in JavaScript, MongoDB, Express.js, React, and Node.js. Skilled in full-stack web development, creating dynamic user interfaces, and efficient server-side programming. Committed to delivering high-quality, scalable web applications that meet client requirements and provide a seamless user experience.
       </p>
 
       <ul className="socials">
@@ -50,27 +47,7 @@ const Footer = () => {
       <p>
           copyright &copy;2023 MERN stack developer
         </p>
-      {/* <div className="footer-bottom">
-        <p>
-          copyright &copy;2021 <a href="">MERN stack developer</a>{" "}
-        </p>
-        <div className="footer-menu">
-          <ul className="f-menu">
-            <li>
-              <a href="">Home</a>
-            </li>
-            <li>
-              <a href="">About</a>
-            </li>
-            <li>
-              <a href="">Contact</a>
-            </li>
-            <li>
-              <a href="">Blog</a>
-            </li>
-          </ul>
-        </div>
-      </div> */}
+   
     </div>
     </div>
   );

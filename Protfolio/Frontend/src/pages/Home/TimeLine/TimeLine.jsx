@@ -23,9 +23,9 @@ const TimeLine = ({ timelines }) => {
               align="right"
               variant="body2"
               color="text.secondary"
-              className="date"
+             
             >
-            {item.endDate}
+            {item.startDate}
             </TimelineOppositeContent>
 
             <TimelineSeparator>

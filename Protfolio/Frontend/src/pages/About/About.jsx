@@ -10,7 +10,13 @@ const About = () => {
       <Navbar></Navbar>
       <div className="about">
         <div className="aboutContainer">
-          <Typography>This is the sample quote </Typography>
+          
+            <blockquote style={{textAlign:"right", lineHeight:"35px" , letterSpacing:"2.5px"}}>
+              Every great developer you <br /> know got there by solving problems <br /> they
+              were unqualified  <br /> to solve until they actually did it. <br />
+              <cite>- Md Jakir Hossain</cite>
+            </blockquote>{" "}
+         
         </div>
         <div className="aboutContainer2">
           <div>
@@ -24,10 +30,13 @@ const About = () => {
             >
               Md Jakir Hossain
             </Typography>
-            <Typography  style={{
+            <Typography
+              style={{
                 margin: "1vmax 0",
-                
-              }}>MERN Stack developer</Typography>
+              }}
+            >
+              MERN Stack developer
+            </Typography>
             <Typography>I am photographer</Typography>
           </div>
           <div>
@@ -39,8 +48,10 @@ const About = () => {
                 textAlign: "right",
               }}
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem dolor labore, velit inventore animi adipisci .
+              Experienced MERN stack developer proficient in JavaScript,
+              MongoDB, Express.js, React, and Node.js. Skilled in full-stack web
+              development, creating dynamic user interfaces, and efficient
+              server-side programming.
             </Typography>
           </div>
         </div>

@@ -4,7 +4,7 @@ import logo from "../../../assets/MyLogo.jpg"
 import { FaUserAlt } from 'react-icons/fa';
 const Navbar = () => {
     return (
-        <div>
+        <div className="navbar-container">
             <ReactNavbar
 
                 navColor1 ="white"
