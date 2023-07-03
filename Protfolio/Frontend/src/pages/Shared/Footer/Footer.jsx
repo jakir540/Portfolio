@@ -47,9 +47,12 @@ const Footer = () => {
           </a>
         </li>
       </ul>
-      <div className="footer-bottom">
+      <p>
+          copyright &copy;2023 MERN stack developer
+        </p>
+      {/* <div className="footer-bottom">
         <p>
-          copyright &copy;2021 <a href="">foolishdeveloper</a>{" "}
+          copyright &copy;2021 <a href="">MERN stack developer</a>{" "}
         </p>
         <div className="footer-menu">
           <ul className="f-menu">
@@ -67,7 +70,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-      </div>
+      </div> */}
     </div>
     </div>
   );

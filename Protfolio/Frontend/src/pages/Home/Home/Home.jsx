@@ -1,12 +1,14 @@
 import { useEffect } from "react";
 import "./Home.css";
 import * as THREE from "three";
-// import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import moonImage from "../../../assets/moon.jpg";
 import venusImage from "../../../assets/venus.jpg";
 import spaceImage from "../../../assets/space.jpg";
 import { Typography } from "@mui/material";
 import TimeLine from "../TimeLine/TimeLine";
+import ressume from "../../../assets/Jakir hossain ressume.pdf";
+import { FaDownload } from "react-icons/fa";
+import timelines from "../../../../public/timeline.json"
 
 import {
   SiChai,
@@ -19,7 +21,6 @@ import {
   SiHtml5,
   SiThreedotjs,
 } from "react-icons/si";
-import { Link } from "react-router-dom";
 
 const Home = () => {
   useEffect(() => {
@@ -102,26 +103,22 @@ const Home = () => {
     };
 
     animate();
-   return window.addEventListener("scroll",()=>{
+    return window.addEventListener("scroll", () => {
       camera.rotation.z = window.scrollY * 0.001;
       camera.rotation.y = window.scrollY * 0.003;
-       const skillsBox = document.getElementById("homeSKillsBox");
-       if (window.scrollY > 1500) {
-        skillsBox.style.animationName = "homeSKillsBoxAnimationOn"
-       }
-       else{
-        skillsBox.style.animationName = "homeSKillsBoxAnimationOff"
-       }
-
-    })
-
-
+      const skillsBox = document.getElementById("homeSKillsBox");
+      if (window.scrollY > 1500) {
+        skillsBox.style.animationName = "homeSKillsBoxAnimationOn";
+      } else {
+        skillsBox.style.animationName = "homeSKillsBoxAnimationOff";
+      }
+    });
   }, []);
   return (
     <div className="home">
       <canvas className="homeCanvas"></canvas>
       <div className="homeCanvasContainer">
-      <Typography variant="h1">
+        <Typography variant="h1">
           <p>M</p>
           <p>D</p>
           <br />
@@ -130,7 +127,7 @@ const Home = () => {
           <p>K</p>
           <p>I</p>
           <p>R</p>
-         <br />
+          <br />
 
           <p>H</p>
           <p>O</p>
@@ -142,17 +139,21 @@ const Home = () => {
         </Typography>
 
         <div className="homeCanvasBox">
-          <Typography variant="h2">I AM A <span style={{color:"hsl(250, 100%, 75%)"}}>MERN</span></Typography>
+          <Typography variant="h2">
+           HI, I AM A <span style={{ color: "hsl(250, 100%, 75%)" }}>MERN</span>
+          </Typography>
           <Typography variant="h2">DEVELOPER</Typography>
+          <Typography variant="h2">WEB DESIGNER</Typography>
           <Typography variant="h2">PHOTOGRAPHER</Typography>
-          <Typography variant="h2">CONTENT CREATOR</Typography>
         </div>
 
-        <Link to="/projects">VIEW PROJECTS</Link>
+        <a className="ressume" href={ressume} download>
+          <p>Ressume <FaDownload style={{marginLeft:"5px"}}/></p>
+        </a>
       </div>
       <div className="homeContainer">
         <Typography variant="h3">TimeLine</Typography>
-        <TimeLine timelines={[1, 2, 3, 4]}></TimeLine>
+        <TimeLine timelines={timelines}></TimeLine>
       </div>
 
       {/* all skills show here */}
@@ -170,32 +171,32 @@ const Home = () => {
           <div className="homeCubeSkillFaces homeCubeSkillsFace2">
             <img
               src="https://logos-world.net/wp-content/uploads/2023/02/JavaScript-Symbol.png"
-              alt="Face1"
+              alt="Face2"
             />
           </div>
 
           <div className="homeCubeSkillFaces homeCubeSkillsFace3">
             <img
               src="https://w7.pngwing.com/pngs/324/26/png-transparent-c-letter-alphabet-letter-c-angle-a-letter-case.png"
-              alt="Face1"
+              alt="Face3"
             />
           </div>
 
           <div className="homeCubeSkillFaces homeCubeSkillsFace4">
             <img
               src="https://1.bp.blogspot.com/-jkSmywQ57sA/Wer3KKSqgaI/AAAAAAAACc4/07TexMsBBI4v7WlVKo76YvxM3TvrMxIdwCLcBGAs/s640/express.js.png"
-              alt="Face1"
+              alt="Face4"
             />
           </div>
 
           <div className="homeCubeSkillFaces homeCubeSkillsFace5">
-            <img src="https://reactnative.dev/img/logo-og.png" alt="Face1" />
+            <img src="https://reactnative.dev/img/logo-og.png" alt="Face5" />
           </div>
 
           <div className="homeCubeSkillFaces homeCubeSkillsFace6">
             <img
               src="https://hopetutors.com/wp-content/uploads/2017/03/nodejs-logo-1.png"
-              alt="Face1"
+              alt="Face6"
             />
           </div>
         </div>

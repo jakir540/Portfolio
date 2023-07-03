@@ -2,6 +2,8 @@
 .footer-body{
     background-color: hsl(250, 100%, 75%);
     font-family: sans-serif;
+    width: 100%;
+
 }
 
 
@@ -11,6 +13,7 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
+  
 }
 
 .footer-content h3{
@@ -61,7 +64,7 @@
     text-align: center;
 }
 .footer-bottom p{
-    float: left;
+    float: center;
     font-size: 14px;
     word-spacing: 2px;
     text-transform: capitalize;
@@ -73,15 +76,14 @@
  }
  .footer-bottom span{
      text-transform: uppercase;
-     opacity: .4;
+     opacity: 4;
      font-weight: 200;
  }
- .footer-menu{
-    float: right;
-  }
-  
+
   .footer-menu ul{
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .footer-menu ul li{

@@ -1,0 +1,13 @@
+.title{
+    color: hsl(250, 100%, 75%);
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 24px;
+}
+.description{
+    text-align: start;
+    color: rgb(22, 20, 20, 0.904);
+    padding: 1vmax;
+    letter-spacing: 1.5px;
+    font-size: 18px;
+}

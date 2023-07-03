@@ -102,7 +102,7 @@
 .homeCubeSkills {
   width: 200px;
   height: 200px;
-  /* animation: cubeRotation 15s linear infinite alternate; */
+  animation: cubeRotation 15s linear infinite alternate;
   transform-style: preserve-3d;
 }
 .homeCubeSkillFaces {
@@ -120,7 +120,7 @@
   height: 40px;
   background-color: rgba(255, 255, 255, 0.171);
   border-radius: 50%;
-  /* animation: cubeShadow 2s ease-in-out infinite alternate ; */
+  animation: cubeShadow 2s ease-in-out infinite alternate ;
   filter: blur(3px);
 }
 .homeCubeSkillFaces > img {
@@ -152,7 +152,28 @@
   transform: scale(1.5);
 }
 
-/* .homeCubeSkillsFace1{
+.ressume{
+  border-radius: 10px;
+  color: white;
+  height: 60px;
+ 
+  display: flex;
+  align-items: center;
+  width: 200px;
+  justify-content: center;
+  
+  
+}
+.ressume > p{
+  font-size: 16px;
+  font-weight: 600;
+  font-family: serif;
+  text-transform: uppercase;
+  display: flex;
+  margin: 2px;
+  
+}
+ .homeCubeSkillsFace1{
   transform: translate3d(0,0,150px);
 }
 .homeCubeSkillsFace2{
@@ -169,7 +190,7 @@
 }
 .homeCubeSkillsFace6{
   transform: rotateX(-90deg) translate3d(0,0,150px);
-} */
+} 
 
 @keyframes cubeRotation {
   to {
@@ -180,7 +201,7 @@
   to {
     transform: scale(1.2) translate(-10px);
   }
-}
+} 
 
 @keyframes homeSKillsBoxAnimationOn {
   from {

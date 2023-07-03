@@ -5,6 +5,7 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
+import  './Timeline.css'
 
 import Typography from "@mui/material/Typography";
 import { Event } from "@mui/icons-material";
@@ -22,8 +23,9 @@ const TimeLine = ({ timelines }) => {
               align="right"
               variant="body2"
               color="text.secondary"
+              className="date"
             >
-              07/03/2023
+            {item.endDate}
             </TimelineOppositeContent>
 
             <TimelineSeparator>
@@ -36,8 +38,8 @@ const TimeLine = ({ timelines }) => {
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "12px", px: 2 }}>
-              <Typography variant="h6">Title</Typography>
-              <Typography variant="h6">Description</Typography>
+              <Typography className="title" variant="h6">{item.title}</Typography>
+              <Typography className="description" variant="h6">{item.description}</Typography>
             </TimelineContent>
           </TimelineItem>
             ))

@@ -9,7 +9,7 @@ const ProjectCart = ({
   projectTitle,
   description,
   technologies,
-  isAdmin = false
+
 }) => {
   return (
     <>
@@ -25,12 +25,12 @@ const ProjectCart = ({
           </div>
         </div>
       </a>
-      {
-        isAdmin && 
+      
+       
         <Button style={{color: "rgba(40,40,40,0.7)"}}>
             <Delete></Delete>
         </Button>
-      }
+      
     </>
   );
 };
