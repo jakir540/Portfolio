@@ -1,0 +1,49 @@
+.navbar-container img{
+    border-radius: 10px;
+}
+
+.menuBurger {
+    width: 2vmax;
+    height: 3.5vmax;
+    position: fixed;
+    top: 2vmax;
+    left: 2vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 1vmax;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+/* .navbar-container {
+    border-radius: ;
+} */
+
+@media (max-width: 600px) {
+    .navbar-container img{
+        border-radius: 50%;
+
+    }
+      
+    .navbar-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+
+    .navbar-container .navbar .nav-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar-container .navbar .nav-item  {
+        margin-bottom: 1rem;
+    }
+}

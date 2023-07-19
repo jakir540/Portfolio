@@ -153,6 +153,8 @@
   transform: scale(1.5);
 }
 
+
+
 .ressume{
   border-radius: 10px;
   color: white;
@@ -223,11 +225,69 @@
 }
 
 
+/* shapes css */
+.custom-shape-divider-top-1687544512 {
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+ 
+.custom-shape-divider-top-1687544512 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 130px;
+   
+}
+ 
+.custom-shape-divider-top-1687544512 .shape-fill {
+    fill: rgb(22, 20, 20, 0.904);
+}
 
 
 
 
 
 
+/* responsive ------------------- */
 
-
+@media (max-width: 600px) {
+  .homeCanvasBox > h2 {
+    font-size: 22px;
+    letter-spacing: normal;
+    line-height: 40px;
+    color: black;
+    /* margin-top: -px; */
+  }
+  .ressume{
+    margin-top: -238px;
+    
+  }
+  .homeCanvasContainer {
+    height: 800px;
+    width: 400px;
+  }
+  .homeSKillsBox {
+    visibility: hidden;
+  }
+  .homeCubeSkills {
+    width: 150px;
+    height: 150px;
+    
+  }
+  .cubeShadow {
+    width: 200px;
+    
+  }
+  .homeCanvasContainer > h1 {
+  
+    position: absolute;
+    top: 30%;
+   
+    
+  
+  }
+}

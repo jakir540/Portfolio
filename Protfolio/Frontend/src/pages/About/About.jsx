@@ -8,7 +8,11 @@ const About = () => {
   return (
     <div>
       <Navbar></Navbar>
+
+
       <div className="about">
+
+
         <div className="aboutContainer">
           
             <blockquote style={{textAlign:"right", lineHeight:"35px" , letterSpacing:"2.5px"}}>
@@ -18,6 +22,10 @@ const About = () => {
             </blockquote>{" "}
          
         </div>
+
+
+
+
         <div className="aboutContainer2">
           <div>
             <img src={myPhoto} alt="myPhoto" className="photoAvatar" />
@@ -35,7 +43,7 @@ const About = () => {
                 margin: "1vmax 0",
               }}
             >
-              MERN Stack developer
+              FRONT-END developer
             </Typography>
             <Typography>I am photographer</Typography>
           </div>
@@ -48,15 +56,24 @@ const About = () => {
                 textAlign: "right",
               }}
             >
-              Experienced MERN stack developer proficient in JavaScript,
-              MongoDB, Express.js, React, and Node.js. Skilled in full-stack web
-              development, creating dynamic user interfaces, and efficient
-              server-side programming.
+              Experienced FRONT-END developer proficient in JavaScript,
+              React, and Node.js. Skilled in creating dynamic user interfaces, and efficient.
+              
             </Typography>
           </div>
         </div>
+
+
+
       </div>
-      <Footer></Footer>
+
+
+
+
+
+     <div className="footer">
+     <Footer></Footer>
+     </div>
     </div>
   );
 };
