@@ -8,8 +8,7 @@ import { Typography } from "@mui/material";
 import TimeLine from "../TimeLine/TimeLine";
 import ressume from "../../../assets/Jakir hossain ressume.pdf";
 import { FaDownload } from "react-icons/fa";
-import timelines from "../../../../public/timeline.json"
-
+import timelines from "../../../../public/timeline.json";
 
 import {
   SiChai,
@@ -116,12 +115,11 @@ const Home = () => {
     });
   }, []);
 
-
   return (
     <div className="home w-full">
       <canvas className="homeCanvas"></canvas>
       <div className="homeCanvasContainer">
-        <Typography className="h-[420px]  text-center rounded-md"  variant="h1">
+        <Typography className="h-[420px]  text-center rounded-md" variant="h1">
           <p className="pt-5">M</p>
           <p>D</p>
           <br />
@@ -143,7 +141,8 @@ const Home = () => {
 
         <div className="homeCanvasBox">
           <Typography variant="h2">
-           HI, I AM A <span style={{ color: "hsl(250, 100%, 75%)" }}>FRONT-END</span>
+            HI, I AM A{" "}
+            <span style={{ color: "hsl(250, 100%, 75%)" }}>FRONT-END</span>
           </Typography>
           <Typography variant="h2">DEVELOPER</Typography>
           <Typography variant="h2">WEB DESIGNER</Typography>
@@ -151,7 +150,9 @@ const Home = () => {
         </div>
 
         <a className="ressume" href={ressume} download>
-          <p>Ressume <FaDownload style={{marginLeft:"5px"}}/></p>
+          <p>
+            Ressume <FaDownload style={{ marginLeft: "5px" }} />
+          </p>
         </a>
       </div>
       <div className="homeContainer">
@@ -205,7 +206,7 @@ const Home = () => {
         </div>
         {/* cube under shadow create */}
         <div className="cubeShadow"></div>
-        <div className="homeSKillsBox" id="homeSKillsBox">
+        <div className="homeSKillsBox rounded-lg" id="homeSKillsBox">
           <SiChai />
           <SiCss3 />
           <SiExpress />
@@ -218,10 +219,10 @@ const Home = () => {
         </div>
       </div>
 
-     
-
-
-      <div style={{backgroundColor:"rgba(0, 0, 0, 0.048)"}} className="custom-shape-divider-top-1687544512">
+      <div
+        style={{ backgroundColor: "rgba(0, 0, 0, 0.048)" }}
+        className="custom-shape-divider-top-1687544512"
+      >
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
